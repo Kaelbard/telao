@@ -1,0 +1,292 @@
+// ----------------------------------------------
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// ----------------------------------------------
+$cinzaClaro: #c9c9c9;
+
+.bg-cinza_claro {
+  background-color: $cinzaClaro !important;
+}
+
+.borda-cinza_clara {
+  border-color: $cinzaClaro;
+}
+
+// ----------------------------------------------
+#appBody {
+  background-size: cover;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+// Classes
+body {
+  font-family: "Roboto", sans-serif !important;
+  color: #14181c;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.colorPicker{
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+
+// Altura da tela - altura do footer de RSS
+#containerTelao {
+  height: calc(100vh - 150px);
+}
+
+//
+.modal-senha__conteudo {
+  background-color: #ccc !important;
+}
+
+.modal-senha__nome-paciente,
+.modal-senha__local {
+  font-weight: bold;
+  font-size: 100px;
+  //background-color: #444;
+  border-radius: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.modal-senha__nome-paciente {
+  color: #000;
+}
+
+.modal-senha__local {
+  color: #143a8c;
+}
+
+.modal-senha__espacador-topo {
+  margin-top: 100px;
+}
+
+.modal-senha__piscar-borda {
+  border: 30px solid rgb(100, 200, 255);
+  animation-name: kf_piscarBorda;
+  animation-duration: 1s;
+  animation-iteration-count: 100;
+  border-radius: 4px;
+}
+@keyframes kf_piscarBorda {
+  50% {
+    border-color: rgb(0, 0, 255);
+    border-radius: 4px;
+  }
+}
+
+.modal-senha__titulos {
+  color: #000;
+  font-weight: bold;
+  font-size: 90px;
+}
+
+//
+.midia__tamanho-midia-local {
+  $largura: 88%;
+  width: $largura;
+  min-width: $largura;
+  max-width: $largura;
+
+  $altura: calc($largura / 1.777);
+  height: $altura;
+  min-height: $altura;
+  max-height: $altura;
+}
+
+//
+.midia__tamanho-midia-captura {
+  $largura: 68%;
+  width: $largura;
+  min-width: $largura;
+  max-width: $largura;
+
+  $altura: calc($largura / 1.777);
+  height: $altura;
+  min-height: $altura;
+  max-height: $altura;
+}
+
+//
+#divIframeMidiaStreaming {
+  $altura: 70vh;
+  height: $altura;
+  $largura: 100%;
+  width: $largura;
+  align-content: center;
+}
+
+//
+#divIframeMidiaStreaming > iframe {
+  $largura: 95%;
+  width: $largura !important;
+  min-width: $largura !important;
+  max-width: $largura !important;
+
+  $altura: 95%;
+  height: $altura !important;
+  min-height: $altura !important;
+  max-height: $altura !important;
+}
+
+//
+.noticia__espaco-direita {
+  margin-right: 150px;
+}
+
+//
+.previewCoresCustomFundo {
+  background-color: #000;
+  color: #FFF;
+  font-size: 22pt;
+  height: 200px;
+  width: 600px;
+}
+
+//
+.previewCoresCustomContainer {
+  background-color: #9b0000;
+  height: 150px;
+  width: 200px;
+}
+
+//
+.semSelecao {
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// ------
+.container-senha-atual {
+  font-size: 28pt;
+  font-weight: bold;
+}
+
+.container-senhas-anteriores {
+  font-size: 28pt;
+}
+
+.container-senhas-anteriores__senha {
+  font-size: 28pt;
+  font-weight: bold;
+}
+
+.container-senhas-anteriores__local {
+  font-size: 28pt;
+}
+
+// ----------------------------------------------
+// Media Queries
+@media only screen and (max-width: 1400px) {
+  //
+  .container-senha-atual {
+    font-size: 24pt;
+    font-weight: bold;
+  }
+
+  //
+  .container-senhas-anteriores {
+    font-size: 22pt;
+  }
+
+  //
+  .container-senhas-anteriores__senha {
+    font-size: 20pt;
+    font-weight: bold;
+  }
+
+  //
+  .container-senhas-anteriores__local {
+    font-size: 18pt;
+  }
+
+  //
+  .midia__tamanho-midia-local {
+    $largura: 88%;
+    width: $largura;
+    min-width: $largura;
+    max-width: $largura;
+
+    $altura: calc($largura / 1.777);
+    height: $altura;
+    min-height: $altura;
+    max-height: $altura;
+  }
+
+  //
+  .midia__tamanho-midia-captura {
+    $largura: 68%;
+    width: $largura;
+    min-width: $largura;
+    max-width: $largura;
+
+    $altura: calc($largura / 1.777);
+    height: $altura;
+    min-height: $altura;
+    max-height: $altura;
+  }
+
+  //
+  #divIframeMidiaStreaming {
+    $altura: 60vh;
+    height: $altura;
+    $largura: 90%;
+    width: $largura;
+    align-content: center;
+  }
+
+  //
+  #divIframeMidiaStreaming > iframe {
+    $largura: 80% !important;
+    width: $largura !important;
+    min-width: $largura !important;
+    max-width: $largura !important;
+
+    $altura: 50% !important;
+    height: $altura !important;
+    min-height: $altura !important;
+    max-height: $altura !important;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  //
+  .container-senha-atual {
+    font-size: 22pt;
+    font-weight: bold;
+  }
+
+  //
+  .container-senhas-anteriores {
+    font-size: 20pt;
+  }
+
+  //
+  .container-senhas-anteriores__senha {
+    font-size: 18pt;
+    font-weight: bold;
+  }
+
+  //
+  .container-senhas-anteriores__local {
+    font-size: 16pt;
+  }
+
+  .titulo-noticia {
+    font-size: 18pt;
+  }
+}
